@@ -1,0 +1,32 @@
+.logo {
+  @include verticalCenter;
+  margin: 5px auto;
+  width: 200px;
+  border-radius: 20px;
+  padding: 5px 0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.307);
+  background: url(../../assets/img/main.jpg) center/cover;
+  
+   
+@-moz-keyframes spin {
+  100% { -moz-transform: rotate(-360deg); }
+}
+@-webkit-keyframes spin {
+  100% { -webkit-transform: rotate(-360deg); }
+}
+@keyframes spin {
+  100% { -webkit-transform: rotate(-360deg); transform: rotate(-360deg); }
+}
+
+  img {
+    height: 40px;
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+  
+  }
+  h3 {
+    margin-left: 10px;
+    color: $color-1;
+  }
+}
